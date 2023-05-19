@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Todo List</h1>
+      <div class="todo-input-container">
+        <input id="todo-input" type="text" placeholder="Enter a new todo" />
+        <button id="add-todo">Add Todo</button>
+      </div>
+      <ul id="todo-list"></ul>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <input
+          id="todo-update-input"
+          class="modal-input"
+          type="text"
+          required
+        />
+        <button id="update-todo" class="modal-button">Update</button>
+      </div>
+    </div>
+    <script src="renderModule.js" type="module"></script>
+  </body>
+</html>
